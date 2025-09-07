@@ -22,101 +22,74 @@
     <link rel="stylesheet" href="./style.css">
   <body>
     <!-- Navbar -->
-      <header class="bg-green-700 text-white shadow-lg sticky top-0 z-50">
-        <div class="w-11/12 mx-auto flex justify-between items-center p-4">
-          <h1 class="text-2xl font-bold">🌱 Green Earth</h1>
+     <div class="navbar  bg-base-100 shadow-sm bg-green-700 h-5  ">
+  <div class="navbar-start ">
+    <div class="dropdown invert ">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow cursor-pointer invert ">
+        <li class="text-lg "> About</li>
+        <li class="text-lg "> Gallery
+        </li>
+        <li class="text-lg ">Plant a Tree</li>
+      </ul>
+    </div>
+        <h1 class="text-2xl font-bold text-white md:ml-10">🪴Green Earth</h1>
+  </div>
+  <div class="navbar-center hidden lg:flex text-lg    ">
+    <ul class="menu menu-horizontal px-1 text-white gap-6 ">
+      <li class="text-lg">About</li>
 
-          <nav class="space-x-4 mx-auto hidden md:flex sm:flex-col lg:flex-row">
-            <a href="#about" class="nav-link hover:underline">About</a>
-            <a href="#gallery" class="nav-link hover:underline">Gallery</a>
-            <a href="#donate" class="nav-link hover:underline">Plant a Tree</a>
-          </nav>
-
-          <!-- Mobile Search Icon -->
-          <button
-            id="mobileSearchToggle"
-            class="md:hidden text-white hover:text-green-200 transition-colors"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              ></path>
-            </svg>
-          </button>
-
-          <div class="font-bold">
-           <button class="bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold px-6 py-3 rounded-full shadow-lg transition">
-             Plant a Tree
-           </button>
-          </div>
-        </div>
-
-        <!--  Search Bar -->
-        <div
-          id="mobileSearchBar"
-          class="md:hidden bg-green-600 px-4 pb-4 hidden"
-        >
-          <div class="relative">
-            <input
-              type="text"
-              id="mobileSearchInput"
-              placeholder="Search trees..."
-              class="w-full pl-10 pr-4 py-2 text-gray-800 rounded-full border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
-            />
-            <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
-              <svg
-                class="w-4 h-4 text-gray-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </header>
+      <li class="text-lg">Gallery 
+      </li>
+      <li class="text-lg">Plant a Tree</li>
+    </ul>
+  </div>
+  <div class="navbar-end font-bold  ">
+    <button class="btn bg-[#facc15] hover:hover:bg-yellow-500 text-green-900 font-bold  px-6 py-3  rounded-full shadow-lg  md:mr-10 ">Plant a Tree</button>
+  </div>
+</div>
       <!-- navber-img-section -->
       <section
-        class=""
+        class="flex flex-col md:flex-row justify-around items-center bg-[#cff0dc]"
       >
       <div>
-          <img src="./assets/hero-leaf1.png" alt="">
+          <img class="" src="./assets/hero-leaf1.png" alt="">
  
       </div>
  
-       <div></div>
-          <div><img src="./assets/hero-leaf2.png" alt=""></div>
+       <div>
+        <h1>Plant a Tree, Grow a Future</h1>
+        <p>Join our mission to plant 1 million trees and make the Earth greener for future
+generations.</p>
+         <div class=" font-bold  ">
+    <button class="btn bg-[#facc15] hover:hover:bg-yellow-500 text-green-900 font-bold  px-6 py-3  rounded-full shadow-lg  md:mr-10 ">Plant a Tree</button>
+  </div>
+       </div>
+          <div>
+            <img src="./assets/hero-leaf2.png" alt="">
+          </div>
 
 
     
       </section>
-
+<section class=" bg-[#F0FDF480] "> 
+      
     <section id="spinner" class="flex justify-center items-center py-10 hidden">
        <span class="loading loading-spinner text-info"></span>
     </section>
-
-    <main class="min-h-screen w-10/12 mx-auto bg-[#F0FDF480] flex my-14 gap-9">
-      <section id="category-Container" class="bg-[#F0FDF480] w-52"></section>
+        <h1 class="text-center py-10">Choose Your Trees</h1>
+    <main class="min-h-screen w-10/12 mx-auto flex  ">
+      <section id="category-Container" class="w-52 justify-end items-center"></section>
       <section
         id="plant-Container"
-        class="bg-[#F0FDF480] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"
+        class="bg-[#F0FDF480] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
       ></section>
 
-      <section id="" class="bg-white w-64 p-4 position-fixed">
+      <section id="" class="bg-white w-74 p-4">
         <h2 class="text-lg font-bold mb-2">Your Cart</h2>
         <div id="cart-container"></div>
       </section>
@@ -161,6 +134,7 @@
         </div>
       </div>
     </section>
+  </section>
 
     <!-- Impact Section -->
     <section id="impact" class="bg-green-100 py-16 px-6">

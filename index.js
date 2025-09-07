@@ -163,7 +163,7 @@ const displayCart = () => {
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("cart-item");
     itemDiv.innerHTML = `
-      <div class="flex justify-between items-center bg-[#F0FDF480] pl-6 py-2">
+      <div class="flex justify-between items-center bg-[#F0FDF480] pl-6 py-2 mt-4">
        <div>
         <p class="font-bold text-xl">${plant.name}</p>
         <p>৳${plant.price}</p>
