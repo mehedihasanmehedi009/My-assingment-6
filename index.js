@@ -163,13 +163,13 @@ const displayCart = () => {
     const itemDiv = document.createElement("div");
     itemDiv.classList.add("cart-item");
     itemDiv.innerHTML = `
-      <div class="flex justify-between items-center bg-[#F0FDF480] pl-6 py-2 mt-4">
+      <div class="flex justify-between items-center rounded-lg bg-[#b2d6bd80] pl-6 py-2 mt-4">
        <div>
         <p class="font-bold text-xl">${plant.name}</p>
         <p>৳${plant.price}</p>
       </div>
 
-        <span onclick="removeFromCart('${plant.id}')" class="cursor-pointer">❌</span>
+        <span onclick="removeFromCart('${plant.id}')" class="cursor-pointer p-3">❌</span>
       </div>
     `;
     cartContainer.appendChild(itemDiv);
