@@ -32,7 +32,7 @@ const displayCategory = (categories) => {
     const categoryDiv = document.createElement("div");
     categoryDiv.classList.add("category");
     categoryDiv.innerHTML = `
-      <button id="lesson-btn-${category.id}" onclick="loadPlantsByCategory('${category.id}')" class="btn w-[200px] hover:bg-green-600 border-none my-1 bg-[#F0FDF480] hover:text-white  lesson">${category.category_name}</button>
+      <button id="lesson-btn-${category.id}" onclick="loadPlantsByCategory('${category.id}')" class="btn w-[200px] hover:bg-green-600 border-none  bg-[#F0FDF480] hover:text-white  lesson">${category.category_name}</button>
     `;
     categoryContainer.appendChild(categoryDiv);
   });
