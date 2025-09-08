@@ -40,7 +40,7 @@ Example: const name = () => console.log("Mehedi");
 name();
 output:Mehedi
 
-#### (৪) How does destructuring assignment work in ES6?
+# (৪) How does destructuring assignment work in ES6?
 
 answer:-Destructuring Assignment (ES6)
 
@@ -54,7 +54,7 @@ object Example:-
 const person = {name: "Mehedi", age: 22};
 const {name, age} = person;
 
-#### (5) Explain template literals in ES6. How are they different from string concatenation?
+# (5) Explain template literals in ES6. How are they different from string concatenation?
 
 answer:- Template Literals (ES6)
 
