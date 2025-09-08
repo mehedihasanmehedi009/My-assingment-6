@@ -32,7 +32,7 @@ const displayCategory = (categories) => {
     const categoryDiv = document.createElement("div");
     categoryDiv.classList.add("category");
     categoryDiv.innerHTML = `
-      <button id="lesson-btn-${category.id}" onclick="loadPlantsByCategory('${category.id}')" class="btn w-[200px] hover:bg-green-600 border-none  bg-[#F0FDF480] hover:text-white  lesson">${category.category_name}</button>
+      <button id="lesson-btn-${category.id}" onclick="loadPlantsByCategory('${category.id}')" class="btn w-[200px]  hover:bg-green-600 border-none  bg-[#F0FDF480] hover:text-white  lesson">${category.category_name}</button>
     `;
     categoryContainer.appendChild(categoryDiv);
   });
@@ -94,7 +94,7 @@ const displayPlants = (plants) => {
     const plantDiv = document.createElement("div");
 
     plantDiv.innerHTML = `
-    <div  class="card w-80 bg-base-100 shadow-xl  rounded-xl">
+    <div  class="card w-[100%] bg-base-100 shadow-xl  rounded-xl">
   <figure>
     <img
       src=${plant.image}
